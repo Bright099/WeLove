@@ -1,0 +1,634 @@
+body{
+    font-family: josefin slab regular;
+    font-weight: 300;
+    background: rgb(233, 233, 233);
+    width: 100%;
+    overflow-x: hidden;
+    line-height: 1.5em;
+}
+footer ul li .links span{
+   margin-left: 36px;
+} 
+.logo {
+    display: flex;
+    grid-column: 1/2;
+}
+.ferr p{
+    text-align: right;
+    grid-column: 1/3;
+}
+.social{
+    display: flex;
+    grid-column: 2/3;
+}
+.logo img, .social img{
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
+}
+.ferr{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.welove{
+    display: grid;
+    grid-template-columns: 91fr 3fr 3fr 3fr;
+    height: fit-content;
+    grid-gap: 15px;
+}
+.welove img{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+/*header*/
+header .first{
+    color: white;
+    background-color: rgb(22, 21, 21);
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+.welove{
+    margin: 0;
+    max-height: 200px;
+}
+ .second{
+    grid-column: 1/2;
+    text-align: center;
+    margin: 0;
+    font-size: 120px;
+    font-family: Bodoni MT;
+    font-weight: 900;
+    padding: 0;
+    max-height: 200px;
+    position: relative;
+    top: -60px;
+    left: 50px;
+}
+header a{
+    color: darkgray;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 0;
+    position: relative;
+    top: -30px;
+  
+}
+nav ul li{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+/*necklace*/
+#necklace{
+    margin: auto;
+    position: relative;
+    top: 70px;
+}
+#necklace ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+#necklace h2{
+    grid-column: 1/3;
+    text-align: center;
+    margin: auto 0;
+    margin-bottom: 60px;
+}
+#necklace ul{
+    margin: auto;
+}
+#necklace img{
+    height: 600px;
+    width: 600px;
+}
+.one, .three, .five, .seven, .nine{
+    grid-column: 1/2;
+    margin: auto;
+}
+.two, .four, .six, .eight, .ten{
+    grid-column: 2/3;
+    margin: auto;
+}
+#slider{
+    width: 100%;
+    height: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+}
+.slides{
+    width: 500%;
+    height: 900px;
+    display: flex;
+    margin: auto;
+    margin-left: 18%;
+    margin-right: 10%;
+    overflow-x: hidden;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+    overflow: hidden;
+}
+.slide img{
+    width: 100%px;
+    height: 900px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 900px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 800px;
+    
+}
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.manual-btn:hover{
+    background: black;
+}
+#radio1:checked ~ .first {
+    margin-left: 0 ;
+}
+#radio2:checked ~ .first {
+    margin-left: -20% ;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40% ;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60% ;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin-top: 800px;
+   
+}
+.navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: black;
+}
+
+
+
+/*form*/
+button{
+    background: rgb(22, 21, 21);
+    color: white;
+    padding: 15px;
+    margin-left: 0;
+    position: relative;
+    left: 5px;
+    border: black 1px solid;
+}
+.yahoo{
+    padding: 15px;
+    width: 400px;
+    margin-right: 0;
+    position: relative;
+    left: 10px;
+    border:none;
+}
+#Newsletter h3{
+    position: relative;
+    left: 9px;
+}
+
+.meow{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+.meow a{
+    text-decoration: none;
+    color: black;
+}
+.a, .d{
+    grid-column: 1/2;
+}
+.b{
+    grid-column: 2/3;
+}
+.c{
+    grid-column: 3/4;
+}
+.e{
+    grid-column: 2/3;
+}
+.f{
+    grid-column: 3/4;
+}
+.g{
+    grid-template-rows: 4/5;
+}
+
+#shop{
+    margin: auto;
+    position: relative;
+    top: 70px;
+}
+#shop ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    grid-gap: 25px;
+}#shop img{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}#shop li{
+    margin: auto;
+    
+}
+#shop li p{
+    width: 497px;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(102, 102, 101);
+    border: none;
+    
+}
+footer{
+    position: relative;
+    top: 70px;
+}
+
+#shop li  a{
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+    padding: 5px;
+    border: 1px solid rgb(70, 69, 69);
+    font-family: Poppins;
+}
+@media screen and (max-width: 1300px){
+    #necklace img{
+        width: 500px;
+        height: 500px;
+    }
+    #shop img{
+        width: 500px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1189px){
+    #necklace img{
+        width: 470px;
+        height: 470px;
+    }
+    #shop img{
+        width: 470px;
+        height: 470px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    #necklace img{
+        width: 420px;
+        height: 420px;
+    }
+    #shop img{
+        width: 420px;
+        height: 420px;
+    }
+}
+@media  screen and (max-width: 944px) {
+    #necklace img{
+        width: 380px;
+        height: 380px;
+    }
+    #shop img{
+        width: 380px;
+        height: 380px;
+    }
+}
+@media screen and (max-width: 870px){
+    #necklace img{
+        width: 320px;
+        height: 320px;
+    }
+    #shop img{
+        width: 320px;
+        height: 320px;
+    }
+}
+@media screen and (max-width: 746px){
+    #shop{
+        margin-right: 20px;
+    }
+    #necklace img{
+        width: 300px;
+        height: 300px;
+    }
+    #shop img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 700px){
+    #necklace img{
+        width: 280px;
+        height: 280px;
+    }
+    #shop img{
+        width: 280px;
+        height: 280px;
+    }
+}
+@media screen and (max-width: 650px){
+    #necklace img{
+        width: 250px;
+        height: 250px;
+    }
+    #shop img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 650px){
+    #shop{
+        margin: auto;
+        margin-right: 40px;
+    }
+    #necklace{
+        margin: auto;
+        margin-right: 40px;
+    }
+    #necklace ul{
+        display: block;
+        margin: auto;
+    }
+    #shop ul{
+        display: block;
+        margin: auto;
+    }
+    #necklace ul li{
+        margin: auto;
+    }
+    #shop ul li{
+        margin: auto;
+    }
+    #necklace img{
+        width: 530px;
+        height: 530px;
+        margin: auto;
+    }
+    #shop img{
+        width: 530px;
+        height: 530px;
+        margin: auto;
+    }
+    .ferr{
+        display: block;
+    }
+    footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1frS;
+    }
+
+    button{
+        background: rgb(22, 21, 21);
+        color: white;
+        padding: 15px;
+       margin: auto;
+        position: relative;
+        left: 5px;
+        width: 80%;
+        border: black 1px solid;
+    }
+    .yahoo{
+        padding: 15px;
+        width: 80%;
+        position: relative;
+        left: 10px;
+        border:none;
+        margin: auto;
+    }
+
+@media screen and (max-width: 600px){
+    #necklace img{
+        width: 500px;
+        height: 500px;
+        margin: auto;
+    }
+    #shop img{
+        width: 500px;
+        height: 500px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 580px){
+    #necklace img{
+        width: 470px;
+        height: 470px;
+        margin: auto;
+    }
+    #shop img{
+        width: 470px;
+        height: 470px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 560px){
+    #necklace img{
+        width: 450px;
+        height: 450px;
+        margin: auto;
+    }
+    #shop img{
+        width: 450px;
+        height: 450px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 540px){
+    #necklace img{
+        width: 440px;
+        height: 440px;
+        margin: auto;
+    }
+    #shop img{
+        width: 440px;
+        height: 440px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 520px){
+    #necklace img{
+        width: 420px;
+        height: 420px;
+        margin: auto;
+    }
+    #shop img{
+        width: 420px;
+        height: 420px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 500px){
+    #necklace img{
+        width: 410px;
+        height: 410px;
+        margin: auto;
+    }
+    #shop img{
+        width: 410px;
+        height: 410px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 480px){
+    #necklace img{
+        width: 390px;
+        height: 390px;
+        margin: auto;
+    }
+    #shop img{
+        width: 390px;
+        height: 390px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 460px){
+    #necklace img{
+        width: 370px;
+        height: 370px;
+        margin: auto;
+    }
+    #shop img{
+        width: 370px;
+        height: 370px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 440px){
+    #necklace img{
+        width: 340px;
+        height: 340px;
+        margin: auto;
+    }
+    #shop img{
+        width: 340px;
+        height: 340px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 420px){
+    #necklace img{
+        width: 330px;
+        height: 330px;
+        margin: auto;
+    }
+    #shop img{
+        width: 330px;
+        height: 330px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 400px){
+    #necklace img{
+        width: 320px;
+        height: 320px;
+        margin: auto;
+    }
+    #shop img{
+        width: 320px;
+        height: 320px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 380px){
+    #necklace img{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    #shop img{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 360px){
+    #necklace img{
+        width: 290px;
+        height: 290px;
+        margin: auto;
+    }
+    #shop img{
+        width: 290px;
+        height: 290px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 340px){
+    #necklace img{
+        width: 270px;
+        height: 270px;
+        margin: auto;
+    }
+    #shop img{
+        width: 270px;
+        height: 270px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 320px){
+    #necklace img{
+        width: 240px;
+        height: 240px;
+        margin: auto;
+    }
+    #shop img{
+        width: 240px;
+        height: 240px;
+        margin: auto;
+    }
+    footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
